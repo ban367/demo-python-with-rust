@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/usr/src/myapp
+    command: ["cargo", "run"]
+    tty: true
